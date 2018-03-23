@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('getdata/{type}','WeatherDataController@getData');
+Route::get('getWeatherData/{type}/{city}/{area}','WeatherDataController@getData');
+Route::get('getLatLon','MapController@getLatLon');
